@@ -1,0 +1,12 @@
+@model BookViewModel
+
+<div>@Model.Title</div>
+
+<div>@Model.Content</div>
+
+<div>@Model.WordCountAll</div>
+
+@foreach (var wordCount in Model.WordCountByWord) 
+{
+	<div> @wordCount </div>
+}
